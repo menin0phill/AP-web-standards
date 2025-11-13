@@ -1,0 +1,494 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #060604;
+    background-color: #FFFFFF;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Navegação */
+.barra-navegacao {
+    background-color: #060604;
+    border-bottom: 1px solid #4F757E;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.conteudo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.menu li a {
+    color: #819EAC;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    color: #FFFFFF;
+}
+
+/* Seção Hero (início) */
+.secao-hero {
+    background-color: #4F757E;
+    border-bottom: 1px solid #819EAC;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.conteudo-hero {
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #060604, #4F757E);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.titulo-principal {
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.subtitulo {
+    font-size: 24px;
+    color: #819EAC;
+    margin-bottom: 24px;
+}
+
+.descricao {
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.botoes {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.botao {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.botao-primario {
+    background-color: #060604;
+    color: white;
+}
+
+.botao-primario:hover {
+    background-color: #9C8C82;
+}
+
+.botao-secundario {
+    background-color: #819EAC;
+    color: #060604;
+    border: 1px solid #4F757E;
+}
+
+.botao-secundario:hover {
+    background-color: #9C8C82;
+    color: #FFFFFF;
+}
+
+/* Seção Sobre */
+.secao-sobre {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.titulo-secao {
+    font-size: 36px;
+    color: #060604;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.cartao-sobre {
+    background-color: #819EAC;
+    border: 1px solid #4F757E;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.cartao-sobre p {
+    font-size: 18px;
+    color: #060604;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.cartao-sobre p:last-child {
+    margin-bottom: 0;
+}
+
+/* Seção Habilidades */
+.secao-habilidades {
+    background-color: #9C8C82;
+    border-top: 1px solid #4F757E;
+    border-bottom: 1px solid #4F757E;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Grid de habilidades */
+.lista-habilidades {
+    display: flex;
+    gap: 24px;
+}
+
+.cartao-habilidade {
+    background-color: #FFFFFF;
+    border: 1px solid #4F757E;
+    border-radius: 12px;
+    padding: 32px;
+    flex: 1;
+}
+
+.icone-habilidade {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icone-azul {
+    background-color: #4F757E;
+    color: #FFFFFF;
+}
+
+.icone-roxo {
+    background-color: #060604;
+    color: #FFFFFF;
+}
+
+.icone-verde {
+    background-color: #819EAC;
+    color: #060604;
+}
+
+.cartao-habilidade h3 {
+    font-size: 22px;
+    color: #060604;
+    margin-bottom: 12px;
+}
+
+.cartao-habilidade p {
+    font-size: 16px;
+    color: #4F757E;
+    line-height: 1.6;
+}
+
+/* Seção Projetos */
+.secao-projetos {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.cartao-projeto {
+    background-color: #819EAC;
+    border: 1px solid #4F757E;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.imagem-projeto {
+    width: 400px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.fundo-azul {
+    background: linear-gradient(135deg, #4F757E, #060604);
+}
+
+.fundo-roxo {
+    background: linear-gradient(135deg, #9C8C82, #4F757E);
+}
+
+.fundo-verde {
+    background: linear-gradient(135deg, #819EAC, #4F757E);
+}
+
+.conteudo-projeto {
+    padding: 32px;
+    flex: 1;
+}
+
+.conteudo-projeto h3 {
+    font-size: 26px;
+    color: #060604;
+    margin-bottom: 12px;
+}
+
+.conteudo-projeto p {
+    font-size: 16px;
+    color: #060604;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tags-projeto {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background-color: #4F757E;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.link-projeto {
+    color: #060604;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.link-projeto:hover {
+    text-decoration: underline;
+}
+
+/* Seção Contato */
+.secao-contato {
+    background-color: #4F757E;
+    border-top: 1px solid #819EAC;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.cartao-contato {
+    background-color: #9C8C82;
+    border: 1px solid #060604;
+    border-radius: 12px;
+    padding: 48px;
+}
+
+.texto-contato {
+    font-size: 18px;
+    color: #060604;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grid de contatos */
+.lista-contatos {
+    display: flex;
+    gap: 24px;
+}
+
+.item-contato {
+    background-color: #FFFFFF;
+    border: 1px solid #4F757E;
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    flex: 1;
+}
+
+.item-contato:hover {
+    border-color: #060604;
+}
+
+.item-contato svg {
+    color: #4F757E;
+    flex-shrink: 0;
+}
+
+.label-contato {
+    font-size: 14px;
+    color: #9C8C82;
+    margin-bottom: 4px;
+}
+
+.valor-contato {
+    font-size: 16px;
+    color: #060604;
+    margin: 0;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #060604;
+    color: #819EAC;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.rodape p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Media Queries para responsividade */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .menu {
+        gap: 16px;
+    }
+    
+    .menu li a {
+        font-size: 14px;
+    }
+    
+    .titulo-principal {
+        font-size: 36px;
+    }
+    
+    .subtitulo {
+        font-size: 20px;
+    }
+    
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .botao {
+        width: 200px;
+        text-align: center;
+    }
+    
+    /* Habilidades em coluna */
+    .lista-habilidades {
+        flex-direction: column;
+    }
+    
+    /* Projetos em coluna */
+    .cartao-projeto {
+        flex-direction: column;
+    }
+    
+    .imagem-projeto {
+        width: 100%;
+        min-height: 200px;
+    }
+    
+    /* Contatos em coluna */
+    .lista-contatos {
+        flex-direction: column;
+    }
+}
+
+/* Celulares */
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .menu {
+        gap: 12px;
+    }
+    
+    .menu li a {
+        font-size: 12px;
+    }
+    
+    .titulo-principal {
+        font-size: 28px;
+    }
+    
+    .subtitulo {
+        font-size: 18px;
+    }
+    
+    .descricao {
+        font-size: 16px;
+    }
+    
+    .titulo-secao {
+        font-size: 28px;
+    }
+    
+    .cartao-sobre {
+        padding: 24px;
+    }
+    
+    .cartao-habilidade {
+        padding: 24px;
+    }
+    
+    .conteudo-projeto {
+        padding: 24px;
+    }
+    
+    .cartao-contato {
+        padding: 32px;
+    }
+}
