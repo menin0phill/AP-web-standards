@@ -2,6 +2,8 @@
 
 Projeto desenvolvido na unidade curricular de HTML e CSS.
 
+Figma: https://www.figma.com/design/NBFauvA3NQZKUtneIsnlum/Portf%C3%B3lio---Henrique-Santos-TSI1?node-id=0-1&t=rIbYjTB7zU304KY8-1
+
 ## Tecnologias
 - HTML5
 - CSS3
@@ -56,4 +58,5 @@ O site utiliza media queries para adaptar o layout em diferentes tamanhos de tel
 - Utilizei Bootstrap apenas para o sistema de grid e componentes básicos
 - Todos os estilos personalizados estão no arquivo `assets/styles/styles.css`
 - Os ícones SVG foram copiados diretamente do site Feather Icons
+
 - Cores e layout criados do zero seguindo a paleta de cores definida
